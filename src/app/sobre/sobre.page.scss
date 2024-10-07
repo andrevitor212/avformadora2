@@ -1,0 +1,53 @@
+ion-content {
+  --padding-start: 20px;
+  --padding-end: 20px;
+  --padding-top: 40px;
+  --padding-bottom: 20px;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  background-color: #1e1e1e; /* Cor de fundo mais escura */
+}
+
+ion-text h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #e60000; /* Cor em referência ao Flamengo */
+  margin-bottom: 10px;
+}
+
+ion-text p {
+  font-size: 18px;
+  color: #ffffff; /* Cor para facilitar a leitura */
+  line-height: 1.6;
+}
+
+/* Estilo para a foto da barbearia */
+.foto-barbearia-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0; /* Espaço entre a imagem e o texto */
+}
+
+.foto-barbearia {
+  width: 200px;
+  height: 200px;
+  object-fit: cover; /* Garante que a imagem se adapte ao quadrado */
+  border-radius: 20px; /* Bordas arredondadas para o quadrado */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Efeito de sombra */
+}
+
+ion-list {
+  background-color: transparent; /* Torna o fundo do ion-list transparente */
+  display: flex;
+  flex-wrap: wrap;
+}
+
+ion-button {
+  --background: #ffffff; 
+  flex-basis: calc(50% - 20px); /* Cada botão ocupa 50% do container, menos o gap */
+}
+
+ion-icon {
+  font-size: 35px; /* Ajuste o tamanho do ícone conforme necessário */
+}

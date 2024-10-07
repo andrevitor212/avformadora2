@@ -1,0 +1,24 @@
+ion-content {
+  --background: transparent; /* Certificar que o fundo não cobre o mapa */
+}
+
+#map {
+  height: 100vh; /* O mapa ocupa toda a altura do conteúdo */
+  width: 100%; /* O mapa ocupa toda a largura do conteúdo */
+}
+
+
+ion-list {
+  background-color: transparent; /* Torna o fundo do ion-list transparente */
+  display: flex;
+  flex-wrap: wrap;
+}
+
+ion-button {
+  --background: #ffffff; 
+  flex-basis: calc(50% - 20px); /* Cada botão ocupa 50% do container, menos o gap */
+}
+
+ion-icon {
+  font-size: 35px; /* Ajuste o tamanho do ícone conforme necessário */
+}

@@ -1,0 +1,58 @@
+<ion-content>
+  <ion-menu contentId="main-content">
+    
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>Home</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    
+    <ion-content class="ion-padding">
+      This is the menu content.
+    </ion-content>
+
+  </ion-menu>
+  
+  <div class="ion-page" id="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>Home</ion-title>
+        <ion-buttons slot="end">
+          <ion-icon name="notifications-outline"></ion-icon>
+        </ion-buttons>
+      </ion-toolbar>
+    </ion-header>
+  </div>
+
+  <!-- Container do Logo -->
+  <div id="logo-container" style="text-align: center; margin-top: 20px;">
+    <img src="assets/images/barbeiro.png" alt="Logo" style="width: 150px; height: auto;">
+  </div>
+
+  <!-- Campo para Escrever "Barbearia Bangu" -->
+  <div style="text-align: center; margin-top: 20px;">
+    <ion-item>
+      <ion-label position="floating">Home</ion-label>
+      <ion-input value="Barbearia Bangu Show"></ion-input>
+    </ion-item>
+  </div>
+
+  <!-- Botões de Navegação -->
+  <div id="container" style="display: flex; justify-content: center; margin-top: 40px;">
+    <ion-list>
+      <ion-button [routerLink]="['/locais']" shape="round" size="large">
+        <ion-icon name="location-outline"></ion-icon>
+        Nossa loja
+      </ion-button>
+
+      <ion-button [routerLink]="['/sobre']" shape="round" size="large">
+        <ion-icon name="help-circle-outline"></ion-icon>
+       Nossa história
+      </ion-button>
+    </ion-list>
+  </div>
+
+</ion-content>

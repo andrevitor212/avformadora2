@@ -1,0 +1,61 @@
+ion-content {
+  --background: linear-gradient(135deg, #ffffff 10%, #358487 40%, #ff0000 70%, #4f4747 100%);
+  background-color: #fff7d9;
+  /* Cor de fundo principal */
+}
+
+/* CSS para o container do logo */
+#logo-container {
+  position: absolute;
+  /* Permite posicionar o logo sobre o grid */
+  top: 125px;
+  /* Ajuste o valor conforme necessário para posicionar o logo mais para baixo */
+  left: 50%;
+  /* Centraliza horizontalmente */
+  transform: translateX(-50%);
+  /* Ajusta o logo para ficar centralizado */
+  z-index: 10;
+  /* Garante que o logo fique acima dos outros elementos */
+}
+
+#logo-container img {
+  border-radius: 50%;
+  /* Torna a imagem arredondada */
+  object-fit: cover;
+  /* Garante que a imagem se ajuste bem ao círculo */
+}
+
+#container {
+  --background: #3498db;
+  position: relative;
+  /* Necessário para o posicionamento absoluto do logo */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  height: 95vh;
+  padding-bottom: 0px;
+}
+
+#container ion-list {
+  background-color: transparent;
+  /* Torna o fundo do ion-list transparente */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  /* Espaço entre os botões */
+}
+
+#container ion-button {
+  --background: #ffffff;
+  flex-basis: calc(50% - 20px);
+  /* Cada botão ocupa 50% do container, menos o gap */
+  margin-bottom: 20px;
+  /* Espaçamento vertical entre as linhas de ícones */
+}
+
+#container ion-icon {
+  font-size: 35px;
+  /* Ajuste o tamanho do ícone conforme necessário */
+}
